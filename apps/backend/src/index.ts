@@ -5,7 +5,7 @@ const fastify = Fastify({
   logger: true,
 })
 
-fastify.get('/', async function handler(_request, _reply) {
+fastify.get('/api', async function handler(_request, _reply) {
   return { message: 'Hello, World!' }
 })
 
